@@ -1,0 +1,434 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+/* LOGIN */
+
+.login {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.login .login-bg img {
+  width: 100%;
+  height: 100vh;
+  position: fixed; /* Keep the image fixed to the viewport */
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ensures the image covers the viewport without distortion */
+  z-index: -1; /* Image stays in the background */
+
+}
+
+.login .main {
+  background-color: #dddddd49;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(50px);
+  border: 2px solid rgba(o, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 400px;
+  z-index: 1; /* Ensure the form stays above the background */
+}
+
+
+.login .main img{
+  width: 80px;
+  height: 38px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+
+.login label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-weight: bold;
+}
+
+.login input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.login button {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  background-color: #225a248d;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login .main a{
+  text-decoration: none ;
+}
+
+.login .skip-btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  background-color: #e6d6d36c; /* Tomato color */
+  width: 40%;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 215px;
+}
+
+
+/* SIGNUP */
+
+.signup {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.signup .signup-bg img {
+  width: 100%;
+  height: 100vh;
+  position: fixed; /* Keep the image fixed to the viewport */
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ensures the image covers the viewport without distortion */
+  z-index: -1; /* Image stays in the background */
+
+}
+
+.signup .main {
+  background-color: #dddddd49;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(50px);
+  border: 2px solid rgba(o, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 400px;
+  z-index: 1; /* Ensure the form stays above the background */
+}
+
+
+.signup .main img{
+  width: 80px;
+  height: 38px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+
+.signup label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #383737;
+  font-weight: bold;
+}
+
+.signup input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.signup button {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  background-color: #225a248d;
+  width: 100%;
+  font-size: 16px;
+}
+
+.signup .main a{
+  text-decoration: none ;
+}
+
+
+/* RESETPASSWORD */
+
+.resetpw {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.resetpw .resetpw-bg img {
+  width: 100%;
+  height: 100vh;
+  position: fixed; /* Keep the image fixed to the viewport */
+  top: 0;
+  left: 0;
+  object-fit: cover; /* Ensures the image covers the viewport without distortion */
+  z-index: -1; /* Image stays in the background */
+
+}
+
+.resetpw .main {
+  background-color: #dddddd6d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(50px);
+  border: 2px solid rgba(o, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 400px;
+  z-index: 1; /* Ensure the form stays above the background */
+}
+
+
+.resetpw .main img{
+  width: 80px;
+  height: 38px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+
+.resetpw label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #000000;
+  font-weight: bold;
+}
+
+.resetpw input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.resetpw button {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  color: #ddd;
+  cursor: pointer;
+  background-color: #225a24b9;
+  width: 100%;
+  font-size: 16px;
+}
+
+.recaptcha-container {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  padding-left: 0%;
+  width: 97%;
+  border-radius: 4px;
+  margin-top: 10px;
+  
+}
+
+.recaptcha-checkbox {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+.recaptcha-label {
+  font-size: 18px;
+}
+
+/* WELCOME */
+/* Top navigation section */
+.navt ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.navt {
+  background-color: #f8f9fa;
+  align-items: center;
+  height: 40px;
+}
+
+/* Hide top navigation on screens smaller than 768px */
+@media (max-width: 768px) {
+  .navt {
+    display: none; /* Top navigation hidden */
+  }
+}
+
+
+/* Carousel image */
+.custom-carousel-img {
+  height: 300px; /* Set the carousel height */
+  object-fit: cover;
+}
+
+/* Responsive carousel height */
+@media (min-width: 768px) {
+  .custom-carousel-img {
+    height: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-carousel-img {
+    height: 200px;
+  }
+}
+
+
+
+/* Adjustments for different screen sizes */
+.nav-icons {
+  display: flex;
+  gap: 15px; /* Adds a gap between the icons */
+}
+
+.nav-icon {
+  color: white;
+  font-size: 1.2rem; /* Adjust icon size if needed */
+}
+
+/* Center logo and align icons on smaller screens */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    position: absolute;
+    left: 15px;
+  }
+}
+
+.items img{
+  height: 150px;
+}
+
+.items div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.items div a{
+  color: #000000;
+  text-decoration: none;
+}
+
+.items{
+  margin-top: 5px;
+}
+
+
+/* dashbard */
+
+
+.side-nav {
+  /* position: fixed; */
+  top: 96px; /* Adjust according to navbar height */
+  left: 0;
+  /* width: 10px; Adjust width as needed */
+  background: #ddd;
+  height: calc(100vh - 56px); /* Adjust according to navbar height */
+  overflow-y: auto;
+  padding-top: 20px;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.side-nav li {
+  padding: 10px;
+}
+
+.side-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+.content {
+  flex: 4.5;
+  /* margin-left: 15vw; Adjust according to side nav width */
+  padding: 20px;
+  border: 2px solid;
+}
+
+.dlabelstyle {
+  font-weight: bold;
+  color: blue;
+  font-size: 16px;
+}
+
+
+
+
+
+.product-card {
+  text-align: center;
+  padding: 15px;
+  border: 2px solid;
+}
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.view-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
