@@ -13,14 +13,14 @@ function Dashboard() {
       case 'cameradrones':
         setSideNavItems([
           { label: 'Aerial Photography', style: { fontWeight: 'bold',  color: '#212529', fontSize: '15px' }},
-          { label: 'DJI Mavic', link: '/dashboard/cameradrones/mavic' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
-          { label: ' DJI Air', link: '/dashboard/cameradrones/air'  , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
-          { label: ' DJI Mini', link: '/dashboard/cameradrones/mini' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: 'DJI Mavic', link: 'djimavic' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: ' DJI Air', link: 'djiair'  , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: ' DJI Mini', link: 'djimini' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
           { label: 'Immersive Flight Experience' , style: { fontWeight: 'bold',  color: '#212529', fontSize: '15px' }},
-          { label: ' DJI Avata', link: '/dashboard/cameradrones/avata', style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' } },
-          { label: ' DJI FPV', link: '/dashboard/cameradrones/fpv'  , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: ' DJI Avata', link: 'djiavata', style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' } },
+          { label: ' DJI FPV', link: 'djifpv'  , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
           { label: 'Aerial Cinematic Tools' , style: { fontWeight: 'bold',  color: '#212529', fontSize: '15px' }},
-          { label: 'DJI Inspire', link: '/dashboard/cameradrones/inspire'  , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px'}},
+          { label: 'DJI Inspire', link: 'djiinspire'  , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px'}},
         ]);
         break;
       case 'handheld':
@@ -70,15 +70,13 @@ function Dashboard() {
               <Navbar.Brand href="#">DJI</Navbar.Brand>
 
             </Col>
-            <Col lg={9} className="d-flex justify-content-center">
-              <Nav className="d-flex justify-content-center">
+            <Col lg={9} className="d-flex justify-content-around">
+              <Nav className="d-flex justify-content-center" style={{ gap: '30px',marginLeft: '50px' }}>
               <Nav.Link as={Link} to="/dashboard/cameradrones" onClick={() => handleTopMenuClick('cameradrones')}>Camera Drones</Nav.Link>
                 <Nav.Link as={Link} to="/dashboard/handheld" onClick={() => handleTopMenuClick('handheld')}>Handheld</Nav.Link>
                 <Nav.Link as={Link} to="/dashboard/power" onClick={() => handleTopMenuClick('power')}>Power</Nav.Link>
-                <Nav.Link as={Link} to="#education">Education & Industry</Nav.Link>
                 <Nav.Link as={Link} to="#services">Services</Nav.Link>
                 <Nav.Link as={Link} to="#accessories">Accessories</Nav.Link>
-                <Nav.Link as={Link} to="#refurbished">Official Refurbished</Nav.Link>
                 {/* Add more links as needed */}
               </Nav>
             </Col>

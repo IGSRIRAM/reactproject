@@ -403,20 +403,13 @@
   flex: 4.5;
   /* margin-left: 15vw; Adjust according to side nav width */
   padding: 20px;
-  border: 2px solid;
 }
-
-.dlabelstyle {
-  font-weight: bold;
-  color: blue;
-  font-size: 16px;
-}
-
 
 
 
 
 .product-card {
+  background: #f5f5f5;
   text-align: center;
   padding: 15px;
   border: 2px solid;

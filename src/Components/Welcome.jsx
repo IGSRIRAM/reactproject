@@ -37,15 +37,13 @@ function Welcome() {
             
             {/* Menu Section */}
             <Col lg={9} className="d-flex justify-content-center">
-              <Nav className="d-flex justify-content-center">
+              <Nav className="d-flex justify-content-center ">
                 {/* Main menu items */}
                 <Nav.Link href="/dashboard/cameradrones">Camera Drones</Nav.Link>
                 <Nav.Link href="#handheld">Handheld</Nav.Link>
                 <Nav.Link href="#power">Power</Nav.Link>
-                <Nav.Link href="#education">Education & Industry</Nav.Link>
                 <Nav.Link href="#services">Services</Nav.Link>
                 <Nav.Link href="#accessories">Accessories</Nav.Link>
-                <Nav.Link href="#refurbished">Official Refurbished</Nav.Link>
               </Nav>
             </Col>
             

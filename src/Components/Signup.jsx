@@ -15,6 +15,7 @@ function Signup() {
       </div>
       <div className="main">
         <center><img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="logo" /></center>
+        <br />
         <center><h2>Sign up for DJI</h2></center>
         <form>
           <label htmlFor="emailaddress"> Email address: </label>
