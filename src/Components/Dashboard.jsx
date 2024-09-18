@@ -25,14 +25,21 @@ function Dashboard() {
         break;
       case 'handheld':
         setSideNavItems([
-          { label: 'Handheld Camera 1', link: '/dashboard/handheld/camera1' },
-          { label: 'Handheld Camera 2', link: '/dashboard/handheld/camera2' },
+          { label: 'Record Your Life', style: { fontWeight: 'bold',  color: '#212529', fontSize: '15px' }},
+          { label: 'Osmo Pocket', link: 'osmopocket' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: 'Osmo Action', link: 'osmoaction' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: 'Osmo Mobile', link: 'osmomobile' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: 'DJI Mic', link: 'djimic' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+
+          { label: 'Professional Shooting', style: { fontWeight: 'bold',  color: '#212529', fontSize: '15px' }},
+          { label: 'Ronin Stabilizers', link: 'roninstabilizers' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
+          { label: 'Ronin Cinema Cameras', link: 'ronincinemacameras' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
         ]);
         break;
       case 'power':
         setSideNavItems([
-          { label: 'Power Bank 1', link: '/dashboard/power/bank1' },
-          { label: 'Power Bank 2', link: '/dashboard/power/bank2' },
+          { label: ' Portable Power Station', style: { fontWeight: 'bold',  color: '#212529', fontSize: '15px' }},
+          { label: 'DJI Power', link: 'djipower' , style: { fontWeight: 'bold', color: '#5e6a75', fontSize: '18px' }},
         ]);
         break;
       default:
@@ -72,7 +79,8 @@ function Dashboard() {
             </Col>
             <Col lg={9} className="d-flex justify-content-around">
               <Nav className="d-flex justify-content-center" style={{ gap: '30px',marginLeft: '50px' }}>
-              <Nav.Link as={Link} to="/dashboard/cameradrones" onClick={() => handleTopMenuClick('cameradrones')}>Camera Drones</Nav.Link>
+             
+                <Nav.Link as={Link} to="/dashboard/cameradrones" onClick={() => handleTopMenuClick('cameradrones')}>Camera Drones</Nav.Link>
                 <Nav.Link as={Link} to="/dashboard/handheld" onClick={() => handleTopMenuClick('handheld')}>Handheld</Nav.Link>
                 <Nav.Link as={Link} to="/dashboard/power" onClick={() => handleTopMenuClick('power')}>Power</Nav.Link>
                 <Nav.Link as={Link} to="#services">Services</Nav.Link>

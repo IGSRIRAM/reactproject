@@ -10,6 +10,7 @@ function Login() {
   };
 
   const skipLogin = () => {
+    window.location.href = `welcome`;
     // Handle skip login logic, e.g., navigate to homepage or dashboard
     console.log("Skip clicked");
     navigate('/home'); // Change this to the path you want to redirect to
