@@ -10,10 +10,10 @@ function Login() {
   };
 
   const skipLogin = () => {
-    window.location.href = `welcome`;
+    window.location.href = `dashboard/welcome`;
     // Handle skip login logic, e.g., navigate to homepage or dashboard
     console.log("Skip clicked");
-    navigate('/home'); // Change this to the path you want to redirect to
+    navigate('/reactproject'); // Change this to the path you want to redirect to
   };
 
   return (

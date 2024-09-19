@@ -5,7 +5,7 @@ import { FaSearch, FaCartPlus, FaHeart } from 'react-icons/fa';
 import { Outlet, Link } from 'react-router-dom';
 
 function Dashboard() {
-  const [sideNavItems, setSideNavItems] = useState([]);
+  const [sideNavItems, setSideNavItems] = useState([ ]);
 
   // Function to handle top menu clicks
   const handleTopMenuClick = (menuType) => {
@@ -73,7 +73,7 @@ function Dashboard() {
         <Container>
           <Row className="w-100 align-items-center">
             <Col lg={1} className="d-flex align-items-center">
-              <Navbar.Brand href="#" onClick={() => setSideNavItems([])}>
+              <Navbar.Brand onClick={() => setSideNavItems([])} as={Link} to="/dashboard/welcome">
                 DJI
               </Navbar.Brand>
             </Col>

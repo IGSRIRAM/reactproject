@@ -1,11 +1,15 @@
 import React from 'react';
 import { mavic } from '../Data/Products';
+import { Link } from 'react-router-dom';
+
+
 
 function Cameradrones() {
+  const newdata= mavic.slice(0,2)
   return (
     <div className="container">
       <div className="row">
-        {mavic.map((e) => (
+        {newdata.map((e) => (
           <div className="col-md-6" key={e.id}>
             <div className="product-card">
               <img src={e.image} alt={e.name}  style={{ height: "450px" , marginTop: "0px" }}/>
@@ -14,7 +18,7 @@ function Cameradrones() {
             </div>
             </div>
         ))}
-            
+            <Link to='/fullcameradrones'>view all</Link>
 
           {/* Other Products 
           <div className="col-md-3">

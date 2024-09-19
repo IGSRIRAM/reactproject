@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Resetpass from './Components/Resetpass';
-import Welcome from './Components/Welcome';
 import Dashboard from './Components/Dashboard';
+
+import Fullcameradrones from './fullpages/Cameradrones';
+
+import Welcome from './Pages/Welcome';
 import Cameradrones from './Pages/Cameradrones';
 import Handheld from './Pages/Handheld';
 import Power from './Pages/Power';
@@ -20,12 +23,13 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/reactproject" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/resetpass" element={<Resetpass />} />
-          <Route path="/welcome" element={<Welcome />} />
+          
 
           <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="welcome" element={<Welcome />} />
             <Route path="cameradrones" element={<Cameradrones />} />
             <Route path="djimavic" element={<Cameradrones />} />
             <Route path="djiair" element={<Dji_air />} />
@@ -39,6 +43,8 @@ function App() {
 
           </Route>
 
+
+          <Route path="/Fullcameradrones" element={<Fullcameradrones />} />
           <Route path="*" element={<Login />} />
         </Routes>
       </div>

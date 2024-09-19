@@ -6,59 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function Welcome() {
   return (
-    <div className="welcome">
-      {/* Top navigation section (will be hidden on smaller screens) */}
-      <Container className="navt">
-        <Row>
-          <Col xs="10">
-            <ul className="d-flex">
-              <li>dji.com</li>
-              <li>Refurbished Products</li>
-              <li>More</li>
-              <li>Limited time only - free fast-delivery upgrade!</li>
-            </ul>
-          </Col>
-          <Col xs="2">
-            <ul>
-              <li>United States (English / $ USD)</li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-
-      {/* Main responsive Navbar without hamburger menu */}
-      <Navbar bg="dark" variant="dark" expand="lg" className="menu">
-        <Container>
-          <Row className="w-100 align-items-center">
-            {/* Logo Section */}
-            <Col lg={1} className="d-flex align-items-center">
-              <Navbar.Brand href="#">DJI</Navbar.Brand>
-            </Col>
-            
-            {/* Menu Section */}
-            <Col lg={9} className="d-flex justify-content-center">
-              <Nav className="d-flex justify-content-center " style={{ gap: '30px',marginLeft: '50px' }}>
-                {/* Main menu items */}
-                <Nav.Link href="/dashboard/cameradrones">Camera Drones</Nav.Link>
-                <Nav.Link href="/dashboard/handheld">Handheld</Nav.Link>
-                <Nav.Link href="/dashboard/power">Power</Nav.Link>
-                <Nav.Link href="#services">Services</Nav.Link>
-                <Nav.Link href="#accessories">Accessories</Nav.Link>
-              </Nav>
-            </Col>
-            
-            {/* Icons Section */}
-            <Col lg={2} className="d-flex align-items-center justify-content-end">
-              <div className="nav-icons">
-                <FaSearch className="nav-icon" />
-                <FaHeart className="nav-icon" />
-                <FaCartPlus className="nav-icon" />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </Navbar>
-
+    <div className="welcome">      
       {/* Carousel Section */}
       <Container fluid className="p-0">
         <Carousel>
